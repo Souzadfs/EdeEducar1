@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(to bottom, #c8f7f4, #ffffff);
+    scroll-behavior: smooth; /* scroll suave */
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.topo h1 {
+    font-family: 'Allura', cursive;
+    font-size: 48px;
+    color: #ff69b4;
+    margin: 0;
+}
+
+.btn-topo {
+    background: linear-gradient(45deg, #6bd1c9, #8ee3dc);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.btn-topo:hover {
+    transform: scale(1.05);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* melhor distribuição */
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* TEXTO */
+.texto {
+    max-width: 500px;
+}
+
+.texto h2 {
+    font-size: 40px;
+    color: #333;
+}
+
+.texto p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn-principal {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff4da6, #ff85c1);
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(255, 77, 166, 0.3);
+}
+
+.btn-principal:hover {
+    transform: scale(1.05);
+}
+
+/* LISTA */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.lista li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.lista li::before {
+    content: "✔";
+    color: green;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* IMAGEM */
+.imagem img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 60px 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 60px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sobre-img img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.sobre-texto {
+    max-width: 500px;
+}
+
+.sobre-texto h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+    .texto {
+        max-width: 100%;
+    }
+
+    .texto h2 {
+        font-size: 28px;
+    }
+
+    .topo h1 {
+        font-size: 36px;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-img img {
+        width: 200px;
+    }
+}
