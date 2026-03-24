@@ -29,7 +29,7 @@ body {
 .produtos {
     display: flex;
     justify-content: center;
-    gap: 100px; /* espaçamento grande entre os cards */
+    gap: 50px; /* espaçamento grande entre os cards */
     padding: 40px;
 }
 
