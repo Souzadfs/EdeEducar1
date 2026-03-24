@@ -57,6 +57,30 @@ body {
 }
 
 /* BOTÕES */
+.btn-saiba1 {
+    margin-top: 10px;
+    background: #6bd1c9;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+/* BOTÕES */
+.btn-saiba2 {
+    margin-top: 10px;
+    background: #6bd1c9;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* BOTÕES */
 .btn-saiba {
     margin-top: 10px;
     background: #6bd1c9;
@@ -104,6 +128,43 @@ body {
     font-weight: bold;
     
     margin: 10px 0;
+}
+
+/* Saiba+1*/
+
+.saiba-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 105px;
+    padding: 40px;
+}
+
+/* VÍDEO */
+.video iframe {
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+/* TEXTO */
+.texto {
+    max-width: 400px;
+}
+
+/* BOTÃO CENTRAL */
+.comprar-area {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-comprar {
+    background: linear-gradient(45deg, #ff4da6, #ff7ab8);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 /* RESPONSIVO */
