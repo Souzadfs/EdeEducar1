@@ -180,10 +180,14 @@ body {
     text-align: center;
     gap: 20px;
 }
+    .video iframe {
+        width: 100%;
+        height: 220px;
+    }
 
     .video-explicacao iframe {
         width: 100%;
-        height: 100px;
+        height: 200px;
     }
 
     .titulo {
