@@ -136,15 +136,19 @@ body {
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 105px;
-    padding: 40px;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* VÍDEO */
+.video {
+    width: 100%;
+}
+
 .video iframe {
-    width: 500px;
-    height: 400px;
-    border-radius: 15px;
+    width: 100%;
+    max-width: 100%; /* 🔥 ESSA LINHA É A CHAVE */
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
 /* TEXTO */
@@ -168,6 +172,10 @@ body {
 }
 
 /* RESPONSIVO */
+* {
+    box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
 
     .produtos {
@@ -180,17 +188,24 @@ body {
         flex-direction: column;
         text-align: center;
         gap: 20px;
+        padding: 20px;
     }
 
-    /* 🔥 CORREÇÃO DO VÍDEO DO SAIBA+ */
+    .video {
+        width: 100%;
+    }
+
     .video iframe {
         width: 100%;
-        height: 220px;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
     .video-explicacao iframe {
         width: 100%;
-        height: 200px;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
     .titulo {
