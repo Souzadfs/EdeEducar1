@@ -2,15 +2,16 @@ body {
     margin: 0;
     font-family: 'Baloo 2', cursive;
     background: linear-gradient(to bottom, #c8f7f4, #ffffff);
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* scroll suave */
 }
 
 /* TOPO */
 .topo {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 40px;
+    text-align: center;
+    padding: 20px 10px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -42,11 +43,11 @@ body {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* melhor distribuição */
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 60px;
+    gap: 40px;
 }
 
 /* TEXTO */
@@ -63,15 +64,6 @@ body {
     font-size: 18px;
     color: #555;
     margin: 20px 0;
-}
-
-/* CORES DO TEXTO */
-.verde {
-    color: #20b2aa;
-}
-
-.rosa {
-    color: #ff4da6;
 }
 
 /* BOTÃO PRINCIPAL */
@@ -106,8 +98,9 @@ body {
 }
 
 .lista li::before {
-    content: "✔ ";
-    color: #2ecc71;
+    content: "✔";
+    color: green;
+    margin-right: 10px;
     font-weight: bold;
 }
 
@@ -158,11 +151,6 @@ body {
 
 /* 📱 RESPONSIVO */
 @media (max-width: 768px) {
-
-    .topo {
-        flex-direction: column;
-        gap: 10px;
-    }
 
     .hero {
         flex-direction: column;
