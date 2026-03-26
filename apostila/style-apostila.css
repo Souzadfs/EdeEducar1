@@ -175,6 +175,11 @@ body {
         align-items: center;
         gap: 30px;
     }
+    .saiba-container {
+    flex-direction: column; /* 🔥 ESSA LINHA RESOLVE */
+    text-align: center;
+    gap: 20px;
+}
 
     .video-explicacao iframe {
         width: 100%;
